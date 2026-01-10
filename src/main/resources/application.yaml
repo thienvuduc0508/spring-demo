@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=HSF302;encrypt=true;trustServerCertificate=true;
+    username: sa
+    password: sa12345
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  signerKey: "615e6220d584d95b8f6c110ad4472548dcaa948094a73ab933362a2a4ce1228c"
