@@ -9,14 +9,13 @@ import lombok.experimental.FieldDefaults;
 import java.time.LocalDate;
 
 @Entity
-@Table(name="Users")
+@Table(name= "users")
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class User {
 
     @Id
-    @Column(name="Id")
     @GeneratedValue(strategy = GenerationType.UUID)
     String id;
 
